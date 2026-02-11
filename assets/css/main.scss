@@ -40,4 +40,18 @@
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
+    
 ;
+
+/* 修改 teaching 列表标题链接颜色 */
+.archive__item-title a {
+  color: #000000 !important; /* 深绿色示例，可改为你喜欢的 HEX 色值 */
+  font-size: 1.15rem !important; /* 默认约 1.4–1.6rem，1.1rem 约小一号 */
+
+}
+
+.archive__item-title a:hover {
+  color: #000000 !important; /* 鼠标悬停色 */
+  margin-bottom: 1.3em;
+
+}

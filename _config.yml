@@ -7,69 +7,51 @@
 # server process.
 
 
-title: "你的名字 / 网站标题"
-name: "你的名字"
-description: "个人学术网站描述"
-url: "https://[你的GitHub用户名].github.io"
-repository: "[你的GitHub用户名]/[你的GitHub用户名].github.io"
-
-author:
-  name: "你的名字"
-  avatar: "profile.png"
-  bio: "你的简短 biography"
-  location: "你的所在地"
-  email: "你的邮箱地址"
-  googlescholar: "你的Google Scholar链接"
-  github: "[你的GitHub用户名]"
-  linkedin: "你的LinkedIn用户名"
-  orcid: "你的ORCID链接"
-
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "江奇达/个人主页"
+title                    : "江奇达 / 学术主页"
 title_separator          : "-"
 name                     : &name "江奇达"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+description              : &description "江奇达的学术主页"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://cidajiang.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "CidaJiang/CidaJiang.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile.jpg"
+  name             : "江奇达"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "沙浮大漠，冰原消融，春度寒疆；<br>道在深耕，功不唐捐，自有回响。"
+  location         : "北京，中国"
+  employer         : "中国地质调查局，<br> 自然资源综合调查指挥中心，<br> 高级工程师"
   uri              : # URL
-  email            : "none@example.org" 
+  #email            : "jiangqida_zhzx@163.com" 
 
   # Academic websites
  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
 #  orcid            : "https://orcid.org/yourorcidurl"
+ # scopus           : # URL
   researchgate     : "https://www.researchgate.net/profile/Qida-Jiang"
   googlescholar    : "https://scholar.google.com/citations?user=fxBvN3sAAAAJ&hl=en"
 
- # scopus           : # URL
 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : 
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -82,17 +64,7 @@ author:
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -371,3 +343,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+title_en: "Qida Jiang / academic Homepage"
+description: &description "江奇达的学术主页"
+description_en: "Qida Jiang’s academic homepage"

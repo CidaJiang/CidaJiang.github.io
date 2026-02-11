@@ -1,13 +1,146 @@
 ---
 layout: archive
-title: "Publications"
+title: "研究"
 permalink: /publications/
 author_profile: true
 ---
+{% include base_path %}
 
-{% if site.author.googlescholar %}
+<!-- {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+{% endif %} -->
+
+{% capture md_block %}
+
+<!-- 移除原先的“研究兴趣”markdown段落，改为下面的自定义布局块 -->
+<!-- ## 研究兴趣 -->
+<!-- 自定义：左文右图 -->
+<!-- <div class="research-section">
+  <div class="research-content">
+    <h2>大型冰盖的气候效应与反馈机制</h2>
+    <p>
+      冰盖在地球气候系统演化中占据核心地位，其反照率、地形起伏和质量变化都会深刻影响全球与区域的气候格局。
+      在地球历史中，冰盖多次扩张与退缩，并伴随海平面、高纬海洋环流、季风系统以及全球温度场发生剧烈变化。
+      重新刻画与理解这段波澜壮阔的古气候史，是一个充满挑战且极具吸引力的科学问题。
+      如今，人类再次面对快速变暖时代，格陵兰和南极冰盖未来的融化将对全球产生怎样的长远影响？
+      回答这些问题，我们需要系统研究冰盖的气候效应与反馈过程，并借助数学与物理方法定量刻画其在地球系统中的作用机制。
+    </p>
+  </div>
+  <div class="research-image">
+    <img src="{{ "/images/SLA_diagram.png" | prepend: base_path }}" alt="研究兴趣配图">
+  </div>
+</div>
+
+
+<div class="research-section">
+  <div class="research-content">
+    <h2>冰盖数值模式及地球系统模式开发</h2>
+    <p>
+      冰盖是面积超过 5 万平方千米、可长期存在于陆地上的大型冰川体，现今主要包括格陵兰和南极冰盖，储存了地球超过70%的淡水。
+      虽然外观坚硬，但冰盖本质上是缓慢流动的黏性流体，其演化可由流体力学方程描述。
+      通过合理近似与适当的参数化方法，我们能够利用数值模型重建冰盖的运动与变化，以解释观测中冰盖的演变。
+      然而，如何选择最合适的近似？如何构建可靠的参数化方案？如何设计并耦合大气与海洋过程的边界条件（如表面和底部质量平衡）？
+      这些都是当前冰盖数值模拟的重要科学问题，我们需要持续探索与改进。
+    </p>
+  </div>
+  <div class="research-image">
+    <img src="{{ "/images/IPCC_SROCC.png" | prepend: base_path }}" alt="研究兴趣配图">
+  </div>
+</div>
+
+<div class="research-section">
+  <div class="research-content">
+    <h2>第四纪古气候数值模拟(<a href="{{ '/GREB-ISM/' | relative_url }}">GREB-ISM</a>)</h2>
+    <p>
+      虽然现代仅剩格陵兰和南极两大冰盖，但在第四纪，多个冰盖曾在北半球不断生灭，并深刻影响全球气候。
+      地质记录为我们提供了洞察古气候变化的线索，但仍存在许多未解之谜，例如冰盖演化机制及其与冰期—间冰期周期的关系。
+      为更好地理解这些问题，我们开发了第四纪古气候数值模拟框架
+      <a href="{{ '/GREB-ISM/' | relative_url }}">GREB-ISM</a>，
+      用于探究冰盖动力学与气候系统的多尺度耦合，揭示冰盖反馈过程在全球演变中的关键作用。
+      我们未来如何改进<a href="{{ '/GREB-ISM/' | relative_url }}">GREB-ISM</a>的模拟结果，如何通过它的模拟讨论冰盖和全球气候的相互作用，是一个重要的研究方向。
+    </p>
+  </div>
+  <div class="research-image">
+    <img src="{{ "/images/sea_level_comp.png" | prepend: base_path }}" alt="研究兴趣配图">
+  </div>
+</div>
+
+<div class="research-section">
+  <div class="research-content">
+    <h2>Wasserstein距离及先进数学方法在气候科学中的应用</h2>
+    <p>气候科学中许多经典统计方法存在可靠性不足、对大数据利用有限等问题。
+      随着现代应用数学的快速发展，诸多先进工具（如最优传输理论）已在其他领域展现强大能力，但在气候研究中应用仍然不足。
+      如何跨越气象学与数学的范式差异，将严谨、创新的数学方法引入气候科学，是一个有趣而且充满挑战的方向。
+      我与合作者们致力于 Wasserstein 距离在气象与气候数据中的应用，期望促进跨学科融合，为更多数学方法在气候科学中的应用提供新的思路。
+    </p>
+  </div>
+  <div class="research-image">
+    <img src="{{ "/images/AAS_WSA.png" | prepend: base_path }}" alt="研究兴趣配图">
+  </div>
+</div> -->
+
+<style>
+  .research-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    background: #fff;
+    margin-bottom: 20px;
+  }
+  .research-content { flex: 1; min-width: 0; }
+  .research-image { flex: 0 0 240px; }
+  .research-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  @media (max-width: 768px) {
+    .research-section { flex-direction: column; align-items: center; text-align: left; }
+    .research-image { flex: none; }
+    .research-image img { width: 70%; max-width: 280px; height: auto; }
+  }
+
+  /* 暗色模式覆盖，提高可读性 */
+  html[data-theme="dark"] .research-section {
+    background: #1f1f1f;         /* 深色卡片底 */
+    border-color: #333;
+  }
+  html[data-theme="dark"] .research-content h2,
+  html[data-theme="dark"] .research-content p {
+    color: #f2f5fa;              /* 浅色文字 */
+  }
+  html[data-theme="dark"] .research-content a {
+    color: #9ecbff;              /* 浅色链接 */
+  }
+  html[data-theme="dark"] .research-content a:hover {
+    color: #cfe7ff;
+  }
+  html[data-theme="dark"] .research-image img {
+    border: 1px solid #333;      /* 图片边框在暗色模式下更清晰 */
+  }
+</style>
+
+## 项目课题
+- 国自然青年科学基金项目：下蜀黄土物源演变及其与20-30万年区域气候-环境事件的联系，项目负责人，结题
+
+## 学术论文
+- <strong>Jiang, Q.</strong>, Hao, Q., Cao, Y., Gao, X., Lu, H., Tan, C., Qiao, Y., Peng, S., 2024. A new method for the rapid identification of accretionary and non-accretionary paleosols: Insights from loess deposits in monsoonal China. <em>CATENA</em> 236, 107763. doi: 10.1016/j.catena.2023.107763.
+- 郝爱兵, 殷志强, 李洪宇, 鲁青原, 彭令, 邵海, <strong>江奇达</strong>, 赵晓峰, 刘玖芬, 庞菊梅, 杨柯, 陈彭, 孔繁鹏, 侯红星, 鲁敏, 2024. 地表基质的科学内涵与理论框架. <em>地质学报</em> 98, 3225-3237.
+- <strong>Jiang, Q.</strong>, Gao, X., Tan, C., Lu, H., Peng, S., Qiao, Y., Hao, Q., 2023. Delayed sedimentary response of the Huanghe alluvial plain to climate change inferred from source variations of the Xiashu loess since ∼1 Ma. <em>CATENA</em> 231, 107380. doi: https://doi.org/10.1016/j.catena.2023.107380.
+- Li, H., Yang, X., Scuderi, L.A., Hu, F., Liang, P., <strong>Jiang, Q.</strong>, Buylaert, J.-P., Wang, X., Du, J., Kang, S., Ma, Z., Wang, L., Wang, X., 2023. East Gobi megalake systems reveal East Asian Monsoon dynamics over the last interglacial-glacial cycle. <em>Nature Communications</em> 14, 2103. doi: https://doi.org/10.1038/s41467-023-37859-1.
+- <strong>Jiang, Q.</strong>, Li, Z., Hao, Q., 2022. Modern sand supply of the Tengger Desert and temporal variations in sand provenance driven by northern Hemisphere glaciation. <em>CATENA</em> 214, 106278. doi: https://doi.org/10.1016/j.catena.2022.106278.
+- Chen, B., Yang, X., <strong>Jiang, Q.</strong>, Liang, P., Lattin Mackenzie, L., Zhou, Y., 2022. Geochemistry of aeolian sand in the Taklamakan Desert and Horqin Sandy Land, northern China: Implications for weathering, recycling, and provenance. <em>CATENA</em> 208, 105769. doi: https://doi.org/10.1016/j.catena.2021.105769.
+- <strong>Jiang, Q.</strong>, Hao, Q., Peng, S., Qiao, Y., 2020. Grain-size evidence for the transport pathway of the Xiashu loess in northern subtropical China and its linkage with fluvial systems. <em>Aeolian Research</em> 46, 100613. doi: https://doi.org/10.1016/j.aeolia.2020.100613.
+- <strong>Jiang, Q.</strong>, Yang, X., 2019. Sedimentological and geochemical composition of aeolian sediments in the Taklamakan Desert: Implications for provenance and sediment supply mechanisms. <em>Journal of Geophysical Research: Earth Surface</em> 124, 1217-1237. doi:  https://doi.org/10.1029/2018JF004990.
+
+
+{% endcapture %}
+{{ md_block | markdownify }}
 
 {% include base_path %}
 
@@ -31,6 +164,7 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+
 
 
 
