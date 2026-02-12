@@ -24,7 +24,7 @@ repository               : "CidaJiang/CidaJiang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile2.jpg"
   name             : "江奇达"
   pronouns         : # example: "she/her"  
   bio              : "沙浮大漠，冰原消融，春度寒疆；<br>道在深耕，功不唐捐，自有回响。"
@@ -346,3 +346,7 @@ compress_html:
 title_en: "Qida Jiang / academic Homepage"
 description: &description "江奇达的学术主页"
 description_en: "Qida Jiang’s academic homepage"
+# Assets
+assets:
+  css:
+    - "assets/css/main.scss"

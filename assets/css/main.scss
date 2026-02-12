@@ -55,3 +55,31 @@
   margin-bottom: 1.3em;
 
 }
+
+/* 放宽整个侧边栏 */
+.sidebar {
+  width: 300px !important;
+  padding-right: 20px;
+}
+
+/* 调大头像尺寸 */
+.author__avatar {
+  width: 300px !important;   /* 默认约 80–100px，可调至 120–150px */
+  height: auto !important;
+  border-radius: 50%;
+  display: block;
+}
+
+/* 调整作者信息文字位置，避免重叠 */
+.sidebar .author__content {
+  margin-top: -10px;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  color: #666;
+}
