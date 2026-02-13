@@ -1,23 +1,16 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for page in site.pages %}
-    {% if page.url != nil and page.url != "" %}
-    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
-    </url>
-    {% endif %}
-  {% endfor %}
-  {% for post in site.teaching %}
-    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-    </url>
-  {% endfor %}
-  {% for post in site.publications %}
-    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-    </url>
-  {% endfor %}
+  <url><loc>https://cijdajiang.github.io/</loc></url>
+  <url><loc>https://cijdajiang.github.io/teaching/</loc></url>
+  <url><loc>https://cijdajiang.github.io/publications/</loc></url>
+  <url><loc>https://cijdajiang.github.io/cv/</loc></url>
+
+  <!-- 可选：添加具体子页面 -->
+  <url><loc>https://cijdajiang.github.io/teaching/xiashu_grain_size/</loc></url>
+  <url><loc>https://cijdajiang.github.io/teaching/xiashu_provenance/</loc></url>
+  <url><loc>https://cijdajiang.github.io/teaching/Taklamakan/</loc></url>
+  <url><loc>https://cijdajiang.github.io/teaching/Tengger/</loc></url>
+  <url><loc>https://cijdajiang.github.io/teaching/xiashu_paleosol/</loc></url>
+
+
 </urlset>
